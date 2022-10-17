@@ -1,2 +1,0 @@
-class RxesController < ApplicationController
-end

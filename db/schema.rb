@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_16_210002) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_17_021335) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,12 +19,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_16_210002) do
     t.string "style"
     t.string "condition"
     t.string "image_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "rx_id"
-  end
-
-  create_table "rxes", force: :cascade do |t|
     t.float "OD_SPH"
     t.float "OD_CYL"
     t.integer "OD_AXIS"
@@ -37,11 +31,22 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_16_210002) do
     t.float "OS_PRISM"
     t.string "OS_BASE"
     t.float "OS_ADD"
+    t.integer "average_score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "frame_id"
+    t.bigint "rating_id"
+    t.index ["rating_id"], name: "index_frames_on_rating_id"
   end
 
-  add_foreign_key "frames", "rxes"
-  add_foreign_key "rxes", "frames"
+  create_table "ratings", force: :cascade do |t|
+    t.integer "score"
+    t.string "comments"
+    t.bigint "frame_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["frame_id"], name: "index_ratings_on_frame_id"
+  end
+
+  add_foreign_key "frames", "ratings"
+  add_foreign_key "ratings", "frames"
 end
