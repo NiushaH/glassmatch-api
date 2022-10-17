@@ -15,6 +15,10 @@ class Api::V1::FramesController < ApplicationController
       render json: @frame
     end
   
+    def new
+        @frame = Frame.new
+    end
+
     # POST /frames
     def create
       @frame = Frame.new(frame_params)
@@ -49,6 +53,6 @@ class Api::V1::FramesController < ApplicationController
   
       # Only allow a list of trusted parameters through.
       def frame_params
-        params.require(:frame).permit(:style, :condition, :image_url, :Rx_id)
+        params.require(:frame).permit(:style, :condition, :image_url, :rating_id)
       end 
 end
