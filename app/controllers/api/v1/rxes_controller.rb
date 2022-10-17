@@ -1,4 +1,4 @@
-class Api::v1::RxesController < ApplicationController
+class Api::V1::RxesController < ApplicationController
     before_action :set_rx, only: %i[ show update destroy ]
 
     # GET /rxes

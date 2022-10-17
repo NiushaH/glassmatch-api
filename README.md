@@ -1,24 +1,17 @@
-# README
+# JavaScript Project: Where Those Who Need Glasses Become 2nd Owner of Like New & Glasses That Are in Wearable Condition Can Be Kept Out of Landfills When Rx Upgrades
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+User Story: Users can list the glasses they wish to donate to GlassesMatch, an imagined place that collects and inventories donated glasses and sends them to those in need.
 
-Things you may want to cover:
+Built With:
+* Frontend: JavaScript.
+* Backend: Ruby on Rails.
+* Database: PostgreSQL
 
-* Ruby version
+Repositories:
+[Frontend](https://github.com/NiushaH/glassmatch-frontend)  *  [Backend](https://github.com/NiushaH/glassmatch-api)
 
-* System dependencies
+Contributing
+Bug reports and pull requests are welcome on GitHub.  This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+License
+The app is available as open source under the terms of the MIT License.
