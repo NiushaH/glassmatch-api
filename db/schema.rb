@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_17_021335) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_22_053535) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,18 +19,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_17_021335) do
     t.string "style"
     t.string "condition"
     t.string "image_url"
-    t.float "OD_SPH"
-    t.float "OD_CYL"
-    t.integer "OD_AXIS"
-    t.float "OD_PRISM"
-    t.string "OD_BASE"
-    t.float "OD_ADD"
-    t.float "OS_SPHERE"
-    t.float "OS_CYL"
-    t.integer "OS_AXIS"
-    t.float "OS_PRISM"
-    t.string "OS_BASE"
-    t.float "OS_ADD"
     t.integer "average_score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

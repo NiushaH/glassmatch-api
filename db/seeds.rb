@@ -6,11 +6,11 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-frame_A = Frame.create(name: "Frame A", style: "round", condition: "like new", image_url: "https://static.zennioptical.com/production/products/general/78/13/7813125-eyeglasses-angle-view.jpg", OD_SPH: -9.00, OD_CYL:-4.00, OD_AXIS: 180, OD_PRISM: 0.5, OD_BASE: "down", OD_ADD: 2.00, OS_SPHERE: -5.00, OS_CYL: -0.50, OS_AXIS: 10, OS_PRISM: 0.5, OS_BASE: "up", OS_ADD: -2.00, average_score: 0)
-frame_B = Frame.create(name: "Frame B", style: "square", condition: "good", image_url: "https://static.zennioptical.com/production/products/general/12/69/126921-eyeglasses-angle-view.jpg", OD_SPH: -9.00, OD_CYL:-4.00, OD_AXIS: 180, OD_PRISM: 0.5, OD_BASE: "down", OD_ADD: 2.00, OS_SPHERE: -5.00, OS_CYL: -0.50, OS_AXIS: 10, OS_PRISM: 0.5, OS_BASE: "up", OS_ADD: -2.00, average_score: 0)
-frame_C = Frame.create(name: "Frame C", style: "oval", condition: "fair", image_url: "https://static.zennioptical.com/production/products/general/44/49/4449139-eyeglasses-front-view.jpg", OD_SPH: -9.00, OD_CYL:-4.00, OD_AXIS: 180, OD_PRISM: 0.5, OD_BASE: "down", OD_ADD: 2.00, OS_SPHERE: -5.00, OS_CYL: -0.50, OS_AXIS: 10, OS_PRISM: 0.5, OS_BASE: "up", OS_ADD: -2.00, average_score: 0)
-frame_D = Frame.create(name: "Frame D", style: "readers", condition: "new in box", image_url: "https://static.zennioptical.com/production/products/general/20/40/2040123-eyeglasses-front-view.jpg", OD_SPH: -9.00, OD_CYL:-4.00, OD_AXIS: 180, OD_PRISM: 0.5, OD_BASE: "down", OD_ADD: 2.00, OS_SPHERE: -5.00, OS_CYL: -0.50, OS_AXIS: 10, OS_PRISM: 0.5, OS_BASE: "up", OS_ADD: -2.00, average_score: 0)
-frame_E = Frame.create(name: "Frame E", style: "cat-eye", condition: "poor", image_url: "https://static.zennioptical.com/production/products/general/12/74/127425-eyeglasses-front-view.jpg", OD_SPH: -9.00, OD_CYL:-4.00, OD_AXIS: 180, OD_PRISM: 0.5, OD_BASE: "down", OD_ADD: 2.00, OS_SPHERE: -5.00, OS_CYL: -0.50, OS_AXIS: 10, OS_PRISM: 0.5, OS_BASE: "up", OS_ADD: -2.00, average_score: 0)
+frame_A = Frame.create(name: "Frame A", style: "round", condition: "like new", image_url: "https://static.zennioptical.com/production/products/general/78/13/7813125-eyeglasses-angle-view.jpg", average_score: 0)
+frame_B = Frame.create(name: "Frame B", style: "square", condition: "good", image_url: "https://static.zennioptical.com/production/products/general/12/69/126921-eyeglasses-angle-view.jpg", average_score: 0)
+frame_C = Frame.create(name: "Frame C", style: "oval", condition: "fair", image_url: "https://static.zennioptical.com/production/products/general/44/49/4449139-eyeglasses-front-view.jpg", average_score: 0)
+frame_D = Frame.create(name: "Frame D", style: "readers", condition: "new in box", image_url: "https://static.zennioptical.com/production/products/general/20/40/2040123-eyeglasses-front-view.jpg", average_score: 0)
+frame_E = Frame.create(name: "Frame E", style: "cat-eye", condition: "poor", image_url: "https://static.zennioptical.com/production/products/general/12/74/127425-eyeglasses-front-view.jpg", average_score: 0)
 
 
 Rating.create([
